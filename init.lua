@@ -63,7 +63,7 @@ require("lazy").setup({
           },
           center = {
             { icon = '󰊄 ', desc = '105M Tokens      ', action = 'Telescope find_files', key = 'f' },
-            { icon = ' ', desc = 'LFS Book         ', action = 'vsplit | terminal lynx https://www.linuxfromscratch.org/lfs/view/stable/', key = 'l' },
+            { icon = ' ', desc = 'LFS Book         ', action = 'vsplit | terminal w3m https://www.linuxfromscratch.org/lfs/view/stable/', key = 'l' },
             { icon = ' ', desc = 'The Lab (Git)    ', action = 'LazyGit', key = 'g' },
             { icon = ' ', desc = 'Identity Config  ', action = 'e $MYVIMRC', key = 'c' },
             { icon = '󰓾 ', desc = 'Scan Network     ', action = 'ReconLocal', key = 'n' },
