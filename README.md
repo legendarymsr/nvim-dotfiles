@@ -1,12 +1,12 @@
-# (✿◕‿◕) RED TEAM COMMAND & CONTROL v20.0 (◕‿◕✿)
+# 🎚️ LEGENDDOTS: RED TEAM COMMAND & CONTROL
 
 <p align="center">
-  <img src="https://neovim.io/logos/neovim-logo.png" width="250" alt="Neovim Logo">
+  <img src="https://neovim.io/logos/neovim-logo.png" width="220" alt="Neovim Logo">
 </p>
 
 <p align="center">
-  <strong>"I use Neovim, BTW... nyaa~!"</strong><br>
-  <em>An elitist, Lua-based identity config built for field operations and headpats.</em>
+  <strong>"Minimalism is a defensive posture."</strong><br>
+  <em>A hardened, Lua-powered identity configuration for cross-platform operations.</em>
 </p>
 
 <p align="center">
@@ -15,35 +15,36 @@
   <img src="https://img.shields.io/badge/Neovim-06b6d4?style=for-the-badge&logo=neovim&logoColor=white">
   <img src="https://img.shields.io/badge/Lua-2c2d72?style=for-the-badge&logo=lua&logoColor=white">
   <img src="https://img.shields.io/badge/Alacritty-FF4F00?style=for-the-badge&logo=alacritty&logoColor=white">
+  <img src="https://img.shields.io/badge/Zsh-black?style=for-the-badge&logo=zsh&logoColor=white">
 </p>
 
 ---
 
-## ⚡ The Manifesto (UwU Edition)
-Hewwo! This isn't just a text editow, it's a **Tactical Command Centew** for the bestest wittle opewatow! *nuzzles your kernel* 
+## ⚡ The Manifesto
+This repository contains a high-performance environment optimized for **Red Team operations** and **system engineering**. It is designed to run natively on Hardened Gentoo, Arch Linux, and Termux (Mobile C2).
 
-Built by a Gentoo/Guix snob to minimize Ewetwon-based bwain wot while maximizing comfy vibes. If you're looking for telemetry or buttons you can click with a mousey-wousey, you've wandewed into the wwong wepositowy! (◕‿◕✿)
-
-> **Status:** Optimized for Termux / Mobile C2 / Hardened Gentoo environments. Rawr.
+Every byte is curated. No telemetry. No Electron-based bloat. Just pure, deterministic execution.
 
 ---
 
-## 🛠️ The Dashboard (Praise Module)
-The custom dashboard is designed for high-speed reconnaissance and receiving headpats. 
+## 🛠️ Core Components
 
-- `[f]` **Fuzzy Findew** — Wocate targets in the filesystem at light speed!
-- `[g]` **The Lab (Git)** — Diwect bridge to `lazygit` for vewsion pewsistence.
-- `[l]` **LFS Book** — Instant access to the Linux Fwom Scwatch manual via `w3m`.
-- `[c]` **Identity Config** — Self-modification of the `init.lua` souwce.
-- `[n]` **Scan Netwowk** — *notices your open ports* Launches an `nmap` buffer.
+### 🖥️ Neovim C2 Dashboard
+The primary interface for system manipulation and reconnaissance:
+- `[f]` **Fuzzy Finder** — High-speed filesystem indexing.
+- `[g]` **The Lab (Git)** — Integrated `lazygit` for persistence management.
+- `[l]` **LFS Book** — Transactional access to the LFS manual via `w3m`.
+- `[c]` **Identity Config** — Self-optimizing `init.lua` environment.
+- `[n]` **Network Recon** — Terminal buffer `nmap` integration.
 
----
+### 🐚 The Shell (Zsh)
+- **Plugin Management:** Powered by `zinit`.
+- **Feedback Loop:** Integrated with the `mommy` praise-engine for positive operational reinforcement.
+- **Portability:** Path-agnostic logic for both phone and desktop environments.
 
-## ❤️ The Praise Protocol
-Integrated with `fwdekker/mommy` because evewy wittle operator needs positive weinfowcement after a successful `git push`. 
-
-- **Custom Rootless Bootstrapper:** `install_mommy.sh` handles Arch and Termux flawlessly.
-- **Randomized Affiwmations:** Because mommy is so pwoud of your 105M tokens, Legend~
+### 📟 Terminal (Alacritty)
+- **Configuration:** `alacritty.toml` (v0.13+ syntax).
+- **Aesthetic:** TokyoNight-Night with 95% tactical transparency.
 
 ---
 
@@ -52,18 +53,16 @@ Integrated with `fwdekker/mommy` because evewy wittle operator needs positive we
 +-----------------------+
 |       F U C K         |
 |      V S  C O D E     |
-|       (◡‿◡✿)         |
 +-----------------------+
 ```
-If your editow takes up mowe than 50MB of RAM, you're a b-b-baka! 
+If your editor collects metadata on your keystrokes, you don't own your machine. You are a guest on it.
 
 ---
 
 ## 🚀 Deployment
-If you think you'we wowthy of this config, you pwobably alweady know how to cwone it. If not, stick to your bwoatwawe! *pounces on your terminal*
 
 ```bash
-git clone https://github.com/legendarymsr/legenddots.git ~/.config/nvim
+git clone https://github.com/legendarymsr/legenddots.git ~/.config/legenddots
 ```
 
-*Note: Relative numbews are enabled. If you can't calculate wine jumps in your head, don't open the editow! (◕ᴥ◕)*
+*Operational Note: Relative line numbers are enabled. If you cannot calculate line-jumps, stick to a GUI.*
