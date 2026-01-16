@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&display=swap');
+
+:root {
+    --bg: #1a1b26;
+    --fg: #c0caf5;
+    --red: #f7768e;
+    --green: #9ece6a;
+    --yellow: #e0af68;
+    --blue: #7aa2f7;
+    --gray: #414868;
+    --black: #15161e;
+    --vscode-side: #1f2335;
+    --vscode-status: #7aa2f7;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    background-color: var(--bg);
+    color: var(--fg);
+    font-family: 'JetBrains Mono', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container { width: 100%; max-width: 700px; }
+
+/* --- COMMON WINDOW STYLES --- */
+.window {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    border: 1px solid #292e42;
+}
+
+/* --- VS CODE STYLING (THE BLOAT) --- */
+.vscode { background-color: var(--black); }
+
+.title-bar {
+    background: #1f2335;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 0.7rem;
+    color: #565f89;
+}
+.buttons { display: flex; gap: 6px; margin-right: 15px; }
+.btn { width: 10px; height: 10px; border-radius: 50%; }
+.btn.red { background: var(--red); }
+.btn.yellow { background: var(--yellow); }
+.btn.green { background: var(--green); }
+.filename { margin: 0 auto; }
+
+.workspace { display: flex; height: 180px; }
+
+.activity-bar {
+    width: 40px;
+    background: var(--vscode-side);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+.icon { width: 20px; height: 20px; background: #565f89; margin-bottom: 15px; opacity: 0.5; }
+.icon.active { border-left: 2px solid var(--fg); opacity: 1; }
+.icon.bottom { margin-top: auto; margin-bottom: 10px; }
+
+.editor-area { flex: 1; display: flex; flex-direction: column; }
+.tabs { background: #1f2335; display: flex; }
+.tab { 
+    background: var(--black); 
+    padding: 5px 15px; 
+    font-size: 0.8rem; 
+    border-top: 2px solid var(--blue);
+    display: flex; gap: 10px; align-items: center;
+}
+.tab .close { font-size: 0.6rem; opacity: 0.5; }
+
+.code-content { display: flex; padding: 10px; font-size: 0.9rem; }
+.line-nums { color: #565f89; padding-right: 15px; text-align: right; border-right: 1px solid #292e42; margin-right: 10px;}
+.code { line-height: 1.5; }
+
+/* Syntax Highlighting */
+.keyword { color: var(--blue); }
+.var { color: var(--yellow); }
+.key { color: var(--fg); }
+.string { color: var(--green); }
+.strike { color: var(--red); text-decoration: line-through; text-decoration-thickness: 3px; font-weight: bold; }
+
+.vscode-status {
+    background: var(--vscode-status);
+    color: #15161e;
+    padding: 2px 10px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+.vscode-status div { display: flex; gap: 15px; }
+
+/* --- NEOVIM STYLING (THE TRUTH) --- */
+.nvim { 
+    background-color: var(--black); 
+    border: 1px solid var(--green); /* Tactical Border */
+}
+
+.nvim-content { padding: 30px; min-height: 150px; }
+.prompt { color: var(--green); font-weight: bold; margin-right: 10px; }
+.cmd { font-size: 1.5rem; font-weight: bold; color: var(--fg); }
+.comment { color: #565f89; font-style: italic; }
+
+.cursor {
+    display: inline-block; width: 10px; height: 1.5rem;
+    background-color: var(--fg); margin-left: 5px;
+    animation: blink 1s infinite; vertical-align: middle;
+}
+
+.nvim-status-line {
+    display: flex;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.mode { background: var(--green); color: #000; padding: 2px 15px; text-transform: uppercase; }
+.file { background: #292e42; color: var(--fg); padding: 2px 15px; flex-grow: 1; }
+.pos { background: var(--blue); color: #000; padding: 2px 10px; }
+
+.footer { margin-top: 40px; text-align: center; font-size: 0.7rem; color: var(--gray); letter-spacing: 2px; }
+
+@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
